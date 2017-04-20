@@ -1,0 +1,10 @@
+[DEFAULT]
+log_file='/tmp/contrail-export.log'
+debug = True
+
+[CONTRAIL]
+analytics_api = 'http://127.0.0.1:8081/analytics/query'
+query_start_time = "now-10m"
+
+[LOG_AGGREGATOR]
+http_receiver = 'http://127.0.0.1:9090/rest'
